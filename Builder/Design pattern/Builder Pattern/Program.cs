@@ -10,7 +10,7 @@ namespace Builder_Pattern
             Console.WriteLine("Builder pattern with Director");
 
             var houseBuilder = new HouseBuilder();
-            var director = new Director(houseBuilder);
+            var director = new ConstructionEngineer(houseBuilder);
 
             director.BuildHouseParisien();
             Console.WriteLine($"Construire maison à Paris : {JsonSerializer.Serialize(houseBuilder.Build())}");

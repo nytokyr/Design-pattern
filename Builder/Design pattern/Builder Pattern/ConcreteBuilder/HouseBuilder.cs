@@ -1,6 +1,6 @@
 ﻿namespace Builder_Pattern
 {
-    class HouseBuilder : IHousebuilder
+    public class HouseBuilder : IHousebuilder
     {
         House _house;
 
@@ -12,6 +12,13 @@
         private void Reset()
         {
             _house = new House();
+        }
+
+        public House Build()
+        {
+            var finalProduct = _house;
+            Reset();
+            return finalProduct;
         }
 
         public void SetDoor(int number)
@@ -29,11 +36,14 @@
             _house.Window = number;
         }
 
-        public House Build()
+        public void SetGarage(int number)
         {
-            var finalProduct = _house;
-            Reset();
-            return finalProduct;
+            throw new System.NotImplementedException();
+        }
+
+        public void SetShape(RanchShape shape)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
