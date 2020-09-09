@@ -6,44 +6,20 @@ namespace Builder_Pattern
 {
     public class ConstructionEngineer
     {
-        IHousebuilder _houseBuilder;
+        HouseBuilder _houseBuilder;
 
-        public ConstructionEngineer(IHousebuilder houseBuilder)
+        public ConstructionEngineer(HouseBuilder houseBuilder)
         {
             _houseBuilder = houseBuilder;
         }
 
-        public void BuildHouseParisien()
+        public void BuildHouse()
         {
-            _houseBuilder.SetRoom(2);
-            _houseBuilder.SetDoor(1);
-            _houseBuilder.SetWindow(2);
-        }
-
-        public void BuildHouseCampagnard()
-        {
-            _houseBuilder.SetRoom(6);
-            _houseBuilder.SetDoor(3);
-            _houseBuilder.SetWindow(12);
-        }
-
-
-        public void BuildRanchAustralia()
-        {
-            _houseBuilder.SetRoom(4);
-            _houseBuilder.SetDoor(2);
-            _houseBuilder.SetWindow(5);
-            _houseBuilder.SetGarage(3);
-            _houseBuilder.SetShape(RanchShape.U);
-        }
-
-        public void BuildRanchCalifornia()
-        {
-            _houseBuilder.SetRoom(6);
-            _houseBuilder.SetDoor(3);
-            _houseBuilder.SetWindow(12);
-            _houseBuilder.SetGarage(1);
-            _houseBuilder.SetShape(RanchShape.Rectangular);
+            _houseBuilder.SetShape();
+            _houseBuilder.SetRooms();
+            _houseBuilder.SetDoors();
+            _houseBuilder.SetWindow();
+            _houseBuilder.SetGarage();
         }
 
     }

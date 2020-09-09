@@ -1,49 +1,28 @@
-﻿namespace Builder_Pattern
+﻿using System;
+
+namespace Builder_Pattern
 {
-    public class HouseBuilder : IHousebuilder
+    public abstract class HouseBuilder
     {
-        House _house;
-
-        public HouseBuilder()
+        internal virtual void SetRooms()
         {
-            Reset();
         }
 
-        private void Reset()
+        internal virtual void SetGarage()
         {
-            _house = new House();
         }
 
-        public House Build()
+        internal virtual void SetWindow()
         {
-            var finalProduct = _house;
-            Reset();
-            return finalProduct;
         }
 
-        public void SetDoor(int number)
+        internal virtual void SetDoors()
         {
-            _house.Door = number;
         }
 
-        public void SetRoom(int number)
+        internal virtual void SetShape()
         {
-            _house.Room = number;
         }
 
-        public void SetWindow(int number)
-        {
-            _house.Window = number;
-        }
-
-        public void SetGarage(int number)
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void SetShape(RanchShape shape)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }
