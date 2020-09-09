@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Builder Pattern", "Builder Pattern\Builder Pattern.csproj", "{B57B9EAF-333B-409C-972E-F5832D277914}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern", "Builder Pattern\BuilderPattern.csproj", "{B57B9EAF-333B-409C-972E-F5832D277914}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuilderPattern", "BuilderPattern", "{3620470D-D3CA-4E16-86AF-CADB47A0D43F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern.Test", "BuilderPattern.Test\BuilderPattern.Test.csproj", "{F7014B01-5D0D-4B37-9972-9A68EAEE178C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern.Test", "BuilderPattern.Test\BuilderPattern.Test.csproj", "{F7014B01-5D0D-4B37-9972-9A68EAEE178C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
